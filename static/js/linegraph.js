@@ -1,5 +1,5 @@
 function fetchData() {
-  const url = '/production';
+  const url = '/current';
 
   return fetch(url)
     .then(response => response.json())
@@ -18,7 +18,7 @@ function fetchData() {
       updateVisualizations();
 
       function updateVisualizations() {
-        const selectedTicker = productDropdown.value;
+        const selectedProduct = productDropdown.value;
         const filteredData = data.filter(item => item.Product === selectedProduct);
         const processedData = convertData(filteredData);
         drawLineGraph(processedData);
@@ -30,13 +30,13 @@ function fetchData() {
 function convertData(data) {
   return data.map(item => ({
     ...item,
-    Production Volume: parseFloat(item.Production Volume),
-    Cost Per Unit: parseFloat(item.Cost Per Unit)
+    ProductionVolume: parseFloat(item.ProductionVolume),
+    CostPerUnit: parseFloat(item.CostPerUnit)
   }));
 }
 
 function drawLineGraph(data) {
-  const margin = { top: 20, right: 20, bottom: 30, left: 50 };
+  const margin = { top: 30, right: 20, bottom: 30, left: 50 };
   const width = 600 - margin.left - margin.right;
   const height = 400 - margin.top - margin.bottom;
 
@@ -56,11 +56,11 @@ function drawLineGraph(data) {
     .range([height, 0]);
 
   const line = d3.line()
-    .x(d => xScale(d.Production Volume))
-    .y(d => yScale(d.Cost Per Unit));
+    .x(d => xScale(d.ProductionVolume))
+    .y(d => yScale(d.CostPerUnit));
 
-  xScale.domain(d3.extent(data, d => d.Production Volume));
-  yScale.domain([0, d3.max(data, d => d.Cost Per Unit)]);
+  xScale.domain(d3.extent(data, d => d.ProductionVolume));
+  yScale.domain([0, d3.max(data, d => d.CostPerUnit)]);
 
   svg.append('path')
     .datum(data)
