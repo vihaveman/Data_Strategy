@@ -1,4 +1,4 @@
-Department,Year of Service,YrsEducation,Age,Gender,College Grad,Local,Satisfaction
+Department,YearOfService,YrsEducation,Age,Gender,CollegeGrad,Local,Satisfaction
 Finance & Purchasing ,3.0,14,52,F,False,True,3.39
 Finance & Purchasing ,6.7,13,22,M,True,True,3.43
 Finance & Purchasing ,24.8,17,27,M,False,False,4.55
