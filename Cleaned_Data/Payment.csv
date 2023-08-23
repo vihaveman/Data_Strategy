@@ -1,0 +1,657 @@
+Date,Product,WorkingDays
+Jan-10,Accessories & Equipment ,15
+Feb-10,Accessories & Equipment ,15
+Mar-10,Accessories & Equipment ,15
+Apr-10,Accessories & Equipment ,15
+May-10,Accessories & Equipment ,15
+Jun-10,Accessories & Equipment ,15
+Jul-10,Accessories & Equipment ,15
+Aug-10,Accessories & Equipment ,15
+Sep-10,Accessories & Equipment ,15
+Oct-10,Accessories & Equipment ,15
+Nov-10,Accessories & Equipment ,15
+Dec-10,Accessories & Equipment ,15
+Jan-11,Accessories & Equipment ,15
+Feb-11,Accessories & Equipment ,15
+Mar-11,Accessories & Equipment ,15
+Apr-11,Accessories & Equipment ,15
+May-11,Accessories & Equipment ,15
+Jun-11,Accessories & Equipment ,15
+Jul-11,Accessories & Equipment ,15
+Aug-11,Accessories & Equipment ,15
+Sep-11,Accessories & Equipment ,15
+Oct-11,Accessories & Equipment ,15
+Nov-11,Accessories & Equipment ,15
+Dec-11,Accessories & Equipment ,15
+Jan-12,Accessories & Equipment ,20
+Feb-12,Accessories & Equipment ,20
+Mar-12,Accessories & Equipment ,20
+Apr-12,Accessories & Equipment ,20
+May-12,Accessories & Equipment ,20
+Jun-12,Accessories & Equipment ,20
+Jul-12,Accessories & Equipment ,20
+Aug-12,Accessories & Equipment ,20
+Sep-12,Accessories & Equipment ,20
+Oct-12,Accessories & Equipment ,20
+Nov-12,Accessories & Equipment ,20
+Dec-12,Accessories & Equipment ,20
+Jan-13,Accessories & Equipment ,20
+Feb-13,Accessories & Equipment ,20
+Mar-13,Accessories & Equipment ,20
+Apr-13,Accessories & Equipment ,20
+May-13,Accessories & Equipment ,20
+Jun-13,Accessories & Equipment ,20
+Jul-13,Accessories & Equipment ,20
+Aug-13,Accessories & Equipment ,20
+Sep-13,Accessories & Equipment ,20
+Oct-13,Accessories & Equipment ,20
+Nov-13,Accessories & Equipment ,20
+Dec-13,Accessories & Equipment ,20
+Jan-14,Accessories & Equipment ,20
+Feb-14,Accessories & Equipment ,20
+Mar-14,Accessories & Equipment ,20
+Apr-14,Accessories & Equipment ,20
+May-14,Accessories & Equipment ,20
+Jun-14,Accessories & Equipment ,20
+Jul-14,Accessories & Equipment ,20
+Aug-14,Accessories & Equipment ,20
+Sep-14,Accessories & Equipment ,20
+Oct-14,Accessories & Equipment ,20
+Nov-14,Accessories & Equipment ,20
+Dec-14,Accessories & Equipment ,20
+Jan-15,Accessories & Equipment ,20
+Feb-15,Accessories & Equipment ,20
+Mar-15,Accessories & Equipment ,20
+Apr-15,Accessories & Equipment ,20
+May-15,Accessories & Equipment ,20
+Jun-15,Accessories & Equipment ,20
+Jul-15,Accessories & Equipment ,20
+Aug-15,Accessories & Equipment ,20
+Sep-15,Accessories & Equipment ,20
+Oct-15,Accessories & Equipment ,20
+Nov-15,Accessories & Equipment ,30
+Dec-15,Accessories & Equipment ,30
+Jan-16,Accessories & Equipment ,30
+Feb-16,Accessories & Equipment ,30
+Mar-16,Accessories & Equipment ,30
+Apr-16,Accessories & Equipment ,30
+May-16,Accessories & Equipment ,30
+Jun-16,Accessories & Equipment ,30
+Jul-16,Accessories & Equipment ,30
+Aug-16,Accessories & Equipment ,30
+Sep-16,Accessories & Equipment ,30
+Oct-16,Accessories & Equipment ,30
+Nov-16,Accessories & Equipment ,30
+Dec-16,Accessories & Equipment ,30
+Jan-17,Accessories & Equipment ,30
+Feb-17,Accessories & Equipment ,30
+Mar-17,Accessories & Equipment ,30
+Apr-17,Accessories & Equipment ,30
+May-17,Accessories & Equipment ,30
+Jun-17,Accessories & Equipment ,30
+Jul-17,Accessories & Equipment ,30
+Aug-17,Accessories & Equipment ,30
+Sep-17,Accessories & Equipment ,30
+Oct-17,Accessories & Equipment ,30
+Nov-17,Accessories & Equipment ,30
+Dec-17,Accessories & Equipment ,30
+Jan-18,Accessories & Equipment ,30
+Feb-18,Accessories & Equipment ,30
+Mar-18,Accessories & Equipment ,30
+Apr-18,Accessories & Equipment ,30
+May-18,Accessories & Equipment ,30
+Jun-18,Accessories & Equipment ,30
+Jul-18,Accessories & Equipment ,30
+Aug-18,Accessories & Equipment ,30
+Sep-18,Accessories & Equipment ,30
+Oct-18,Accessories & Equipment ,30
+Nov-18,Accessories & Equipment ,30
+Dec-18,Accessories & Equipment ,30
+Jan-19,Accessories & Equipment ,30
+Feb-19,Accessories & Equipment ,30
+Mar-19,Accessories & Equipment ,30
+Apr-19,Accessories & Equipment ,30
+May-19,Accessories & Equipment ,30
+Jun-19,Accessories & Equipment ,30
+Jul-19,Accessories & Equipment ,30
+Aug-19,Accessories & Equipment ,30
+Sep-19,Accessories & Equipment ,30
+Oct-19,Accessories & Equipment ,30
+Nov-19,Accessories & Equipment ,30
+Dec-19,Accessories & Equipment ,30
+Jan-20,Accessories & Equipment ,30
+Feb-20,Accessories & Equipment ,30
+Mar-20,Accessories & Equipment ,30
+Apr-20,Accessories & Equipment ,30
+May-20,Accessories & Equipment ,30
+Jun-20,Accessories & Equipment ,30
+Jul-20,Accessories & Equipment ,30
+Aug-20,Accessories & Equipment ,30
+Sep-20,Accessories & Equipment ,30
+Oct-20,Accessories & Equipment ,30
+Nov-20,Accessories & Equipment ,30
+Dec-20,Accessories & Equipment ,30
+Jan-21,Accessories & Equipment ,30
+Feb-21,Accessories & Equipment ,30
+Mar-21,Accessories & Equipment ,30
+Apr-21,Accessories & Equipment ,30
+May-21,Accessories & Equipment ,30
+Jun-21,Accessories & Equipment ,30
+Jul-21,Accessories & Equipment ,30
+Aug-21,Accessories & Equipment ,30
+Sep-21,Accessories & Equipment ,30
+Oct-21,Accessories & Equipment ,30
+Nov-21,Accessories & Equipment ,30
+Dec-21,Accessories & Equipment ,30
+Jan-22,Accessories & Equipment ,30
+Feb-22,Accessories & Equipment ,30
+Mar-22,Accessories & Equipment ,30
+Apr-22,Accessories & Equipment ,30
+May-22,Accessories & Equipment ,30
+Jun-22,Accessories & Equipment ,30
+Jul-22,Accessories & Equipment ,30
+Aug-22,Accessories & Equipment ,30
+Sep-22,Accessories & Equipment ,30
+Oct-22,Accessories & Equipment ,30
+Nov-22,Accessories & Equipment ,30
+Dec-22,Accessories & Equipment ,30
+Jan-23,Accessories & Equipment ,30
+Feb-23,Accessories & Equipment ,30
+Mar-23,Accessories & Equipment ,30
+Apr-23,Accessories & Equipment ,30
+May-23,Accessories & Equipment ,30
+Jun-23,Accessories & Equipment ,30
+Jul-23,Accessories & Equipment ,30
+Aug-23,Accessories & Equipment ,30
+Jan-10,OuterWear,15
+Feb-10,OuterWear,15
+Mar-10,OuterWear,15
+Apr-10,OuterWear,15
+May-10,OuterWear,15
+Jun-10,OuterWear,15
+Jul-10,OuterWear,15
+Aug-10,OuterWear,15
+Sep-10,OuterWear,15
+Oct-10,OuterWear,15
+Nov-10,OuterWear,15
+Dec-10,OuterWear,15
+Jan-11,OuterWear,15
+Feb-11,OuterWear,15
+Mar-11,OuterWear,15
+Apr-11,OuterWear,15
+May-11,OuterWear,15
+Jun-11,OuterWear,15
+Jul-11,OuterWear,15
+Aug-11,OuterWear,15
+Sep-11,OuterWear,15
+Oct-11,OuterWear,15
+Nov-11,OuterWear,15
+Dec-11,OuterWear,15
+Jan-12,OuterWear,15
+Feb-12,OuterWear,15
+Mar-12,OuterWear,20
+Apr-12,OuterWear,20
+May-12,OuterWear,20
+Jun-12,OuterWear,20
+Jul-12,OuterWear,20
+Aug-12,OuterWear,20
+Sep-12,OuterWear,20
+Oct-12,OuterWear,20
+Nov-12,OuterWear,20
+Dec-12,OuterWear,20
+Jan-13,OuterWear,20
+Feb-13,OuterWear,20
+Mar-13,OuterWear,20
+Apr-13,OuterWear,20
+May-13,OuterWear,20
+Jun-13,OuterWear,20
+Jul-13,OuterWear,20
+Aug-13,OuterWear,20
+Sep-13,OuterWear,20
+Oct-13,OuterWear,20
+Nov-13,OuterWear,20
+Dec-13,OuterWear,20
+Jan-14,OuterWear,20
+Feb-14,OuterWear,20
+Mar-14,OuterWear,20
+Apr-14,OuterWear,20
+May-14,OuterWear,20
+Jun-14,OuterWear,20
+Jul-14,OuterWear,20
+Aug-14,OuterWear,20
+Sep-14,OuterWear,20
+Oct-14,OuterWear,20
+Nov-14,OuterWear,20
+Dec-14,OuterWear,20
+Jan-15,OuterWear,20
+Feb-15,OuterWear,20
+Mar-15,OuterWear,20
+Apr-15,OuterWear,20
+May-15,OuterWear,20
+Jun-15,OuterWear,20
+Jul-15,OuterWear,20
+Aug-15,OuterWear,20
+Sep-15,OuterWear,20
+Oct-15,OuterWear,20
+Nov-15,OuterWear,20
+Dec-15,OuterWear,20
+Jan-16,OuterWear,20
+Feb-16,OuterWear,20
+Mar-16,OuterWear,20
+Apr-16,OuterWear,20
+May-16,OuterWear,20
+Jun-16,OuterWear,20
+Jul-16,OuterWear,20
+Aug-16,OuterWear,20
+Sep-16,OuterWear,20
+Oct-16,OuterWear,20
+Nov-16,OuterWear,20
+Dec-16,OuterWear,20
+Jan-17,OuterWear,20
+Feb-17,OuterWear,20
+Mar-17,OuterWear,20
+Apr-17,OuterWear,20
+May-17,OuterWear,20
+Jun-17,OuterWear,20
+Jul-17,OuterWear,20
+Aug-17,OuterWear,20
+Sep-17,OuterWear,20
+Oct-17,OuterWear,20
+Nov-17,OuterWear,20
+Dec-17,OuterWear,20
+Jan-18,OuterWear,30
+Feb-18,OuterWear,30
+Mar-18,OuterWear,30
+Apr-18,OuterWear,30
+May-18,OuterWear,30
+Jun-18,OuterWear,30
+Jul-18,OuterWear,30
+Aug-18,OuterWear,30
+Sep-18,OuterWear,30
+Oct-18,OuterWear,30
+Nov-18,OuterWear,30
+Dec-18,OuterWear,30
+Jan-19,OuterWear,30
+Feb-19,OuterWear,30
+Mar-19,OuterWear,30
+Apr-19,OuterWear,30
+May-19,OuterWear,30
+Jun-19,OuterWear,30
+Jul-19,OuterWear,30
+Aug-19,OuterWear,30
+Sep-19,OuterWear,30
+Oct-19,OuterWear,30
+Nov-19,OuterWear,30
+Dec-19,OuterWear,30
+Jan-20,OuterWear,30
+Feb-20,OuterWear,30
+Mar-20,OuterWear,30
+Apr-20,OuterWear,30
+May-20,OuterWear,30
+Jun-20,OuterWear,30
+Jul-20,OuterWear,45
+Aug-20,OuterWear,45
+Sep-20,OuterWear,45
+Oct-20,OuterWear,45
+Nov-20,OuterWear,45
+Dec-20,OuterWear,45
+Jan-21,OuterWear,45
+Feb-21,OuterWear,45
+Mar-21,OuterWear,45
+Apr-21,OuterWear,45
+May-21,OuterWear,45
+Jun-21,OuterWear,45
+Jul-21,OuterWear,45
+Aug-21,OuterWear,45
+Sep-21,OuterWear,45
+Oct-21,OuterWear,45
+Nov-21,OuterWear,45
+Dec-21,OuterWear,45
+Jan-22,OuterWear,45
+Feb-22,OuterWear,45
+Mar-22,OuterWear,45
+Apr-22,OuterWear,45
+May-22,OuterWear,45
+Jun-22,OuterWear,45
+Jul-22,OuterWear,45
+Aug-22,OuterWear,45
+Sep-22,OuterWear,45
+Oct-22,OuterWear,45
+Nov-22,OuterWear,45
+Dec-22,OuterWear,45
+Jan-23,OuterWear,45
+Feb-23,OuterWear,45
+Mar-23,OuterWear,45
+Apr-23,OuterWear,45
+May-23,OuterWear,45
+Jun-23,OuterWear,45
+Jul-23,OuterWear,45
+Aug-23,OuterWear,45
+Jan-10,Sportswear,10
+Feb-10,Sportswear,10
+Mar-10,Sportswear,10
+Apr-10,Sportswear,10
+May-10,Sportswear,10
+Jun-10,Sportswear,10
+Jul-10,Sportswear,10
+Aug-10,Sportswear,10
+Sep-10,Sportswear,10
+Oct-10,Sportswear,10
+Nov-10,Sportswear,10
+Dec-10,Sportswear,10
+Jan-11,Sportswear,10
+Feb-11,Sportswear,10
+Mar-11,Sportswear,10
+Apr-11,Sportswear,10
+May-11,Sportswear,10
+Jun-11,Sportswear,10
+Jul-11,Sportswear,10
+Aug-11,Sportswear,10
+Sep-11,Sportswear,10
+Oct-11,Sportswear,10
+Nov-11,Sportswear,10
+Dec-11,Sportswear,10
+Jan-12,Sportswear,10
+Feb-12,Sportswear,10
+Mar-12,Sportswear,10
+Apr-12,Sportswear,10
+May-12,Sportswear,10
+Jun-12,Sportswear,10
+Jul-12,Sportswear,10
+Aug-12,Sportswear,10
+Sep-12,Sportswear,10
+Oct-12,Sportswear,10
+Nov-12,Sportswear,10
+Dec-12,Sportswear,10
+Jan-13,Sportswear,10
+Feb-13,Sportswear,10
+Mar-13,Sportswear,10
+Apr-13,Sportswear,10
+May-13,Sportswear,10
+Jun-13,Sportswear,10
+Jul-13,Sportswear,10
+Aug-13,Sportswear,10
+Sep-13,Sportswear,10
+Oct-13,Sportswear,10
+Nov-13,Sportswear,10
+Dec-13,Sportswear,10
+Jan-14,Sportswear,10
+Feb-14,Sportswear,10
+Mar-14,Sportswear,10
+Apr-14,Sportswear,10
+May-14,Sportswear,10
+Jun-14,Sportswear,10
+Jul-14,Sportswear,10
+Aug-14,Sportswear,10
+Sep-14,Sportswear,10
+Oct-14,Sportswear,10
+Nov-14,Sportswear,10
+Dec-14,Sportswear,10
+Jan-15,Sportswear,10
+Feb-15,Sportswear,10
+Mar-15,Sportswear,10
+Apr-15,Sportswear,10
+May-15,Sportswear,10
+Jun-15,Sportswear,10
+Jul-15,Sportswear,10
+Aug-15,Sportswear,10
+Sep-15,Sportswear,10
+Oct-15,Sportswear,10
+Nov-15,Sportswear,10
+Dec-15,Sportswear,10
+Jan-16,Sportswear,15
+Feb-16,Sportswear,15
+Mar-16,Sportswear,15
+Apr-16,Sportswear,15
+May-16,Sportswear,15
+Jun-16,Sportswear,15
+Jul-16,Sportswear,15
+Aug-16,Sportswear,15
+Sep-16,Sportswear,15
+Oct-16,Sportswear,15
+Nov-16,Sportswear,15
+Dec-16,Sportswear,15
+Jan-17,Sportswear,15
+Feb-17,Sportswear,15
+Mar-17,Sportswear,15
+Apr-17,Sportswear,15
+May-17,Sportswear,15
+Jun-17,Sportswear,15
+Jul-17,Sportswear,15
+Aug-17,Sportswear,15
+Sep-17,Sportswear,15
+Oct-17,Sportswear,15
+Nov-17,Sportswear,15
+Dec-17,Sportswear,15
+Jan-18,Sportswear,15
+Feb-18,Sportswear,15
+Mar-18,Sportswear,15
+Apr-18,Sportswear,15
+May-18,Sportswear,15
+Jun-18,Sportswear,15
+Jul-18,Sportswear,15
+Aug-18,Sportswear,15
+Sep-18,Sportswear,15
+Oct-18,Sportswear,15
+Nov-18,Sportswear,15
+Dec-18,Sportswear,15
+Jan-19,Sportswear,20
+Feb-19,Sportswear,20
+Mar-19,Sportswear,20
+Apr-19,Sportswear,20
+May-19,Sportswear,20
+Jun-19,Sportswear,20
+Jul-19,Sportswear,20
+Aug-19,Sportswear,20
+Sep-19,Sportswear,20
+Oct-19,Sportswear,20
+Nov-19,Sportswear,20
+Dec-19,Sportswear,20
+Jan-20,Sportswear,20
+Feb-20,Sportswear,20
+Mar-20,Sportswear,20
+Apr-20,Sportswear,20
+May-20,Sportswear,20
+Jun-20,Sportswear,20
+Jul-20,Sportswear,20
+Aug-20,Sportswear,20
+Sep-20,Sportswear,20
+Oct-20,Sportswear,20
+Nov-20,Sportswear,20
+Dec-20,Sportswear,20
+Jan-21,Sportswear,30
+Feb-21,Sportswear,30
+Mar-21,Sportswear,30
+Apr-21,Sportswear,30
+May-21,Sportswear,30
+Jun-21,Sportswear,30
+Jul-21,Sportswear,30
+Aug-21,Sportswear,30
+Sep-21,Sportswear,30
+Oct-21,Sportswear,30
+Nov-21,Sportswear,30
+Dec-21,Sportswear,30
+Jan-22,Sportswear,30
+Feb-22,Sportswear,30
+Mar-22,Sportswear,30
+Apr-22,Sportswear,30
+May-22,Sportswear,30
+Jun-22,Sportswear,30
+Jul-22,Sportswear,30
+Aug-22,Sportswear,30
+Sep-22,Sportswear,30
+Oct-22,Sportswear,30
+Nov-22,Sportswear,30
+Dec-22,Sportswear,30
+Jan-23,Sportswear,30
+Feb-23,Sportswear,30
+Mar-23,Sportswear,30
+Apr-23,Sportswear,30
+May-23,Sportswear,30
+Jun-23,Sportswear,30
+Jul-23,Sportswear,30
+Aug-23,Sportswear,30
+Jan-10,Footwear,15
+Feb-10,Footwear,15
+Mar-10,Footwear,15
+Apr-10,Footwear,15
+May-10,Footwear,15
+Jun-10,Footwear,15
+Jul-10,Footwear,15
+Aug-10,Footwear,15
+Sep-10,Footwear,15
+Oct-10,Footwear,15
+Nov-10,Footwear,15
+Dec-10,Footwear,15
+Jan-11,Footwear,15
+Feb-11,Footwear,15
+Mar-11,Footwear,15
+Apr-11,Footwear,15
+May-11,Footwear,15
+Jun-11,Footwear,15
+Jul-11,Footwear,15
+Aug-11,Footwear,15
+Sep-11,Footwear,15
+Oct-11,Footwear,15
+Nov-11,Footwear,15
+Dec-11,Footwear,15
+Jan-12,Footwear,15
+Feb-12,Footwear,15
+Mar-12,Footwear,15
+Apr-12,Footwear,15
+May-12,Footwear,15
+Jun-12,Footwear,15
+Jul-12,Footwear,15
+Aug-12,Footwear,15
+Sep-12,Footwear,15
+Oct-12,Footwear,15
+Nov-12,Footwear,15
+Dec-12,Footwear,15
+Jan-13,Footwear,20
+Feb-13,Footwear,20
+Mar-13,Footwear,20
+Apr-13,Footwear,20
+May-13,Footwear,20
+Jun-13,Footwear,20
+Jul-13,Footwear,20
+Aug-13,Footwear,20
+Sep-13,Footwear,20
+Oct-13,Footwear,20
+Nov-13,Footwear,20
+Dec-13,Footwear,20
+Jan-14,Footwear,20
+Feb-14,Footwear,20
+Mar-14,Footwear,20
+Apr-14,Footwear,20
+May-14,Footwear,20
+Jun-14,Footwear,20
+Jul-14,Footwear,20
+Aug-14,Footwear,20
+Sep-14,Footwear,20
+Oct-14,Footwear,20
+Nov-14,Footwear,20
+Dec-14,Footwear,20
+Jan-15,Footwear,25
+Feb-15,Footwear,25
+Mar-15,Footwear,25
+Apr-15,Footwear,25
+May-15,Footwear,25
+Jun-15,Footwear,25
+Jul-15,Footwear,25
+Aug-15,Footwear,25
+Sep-15,Footwear,25
+Oct-15,Footwear,25
+Nov-15,Footwear,25
+Dec-15,Footwear,25
+Jan-16,Footwear,25
+Feb-16,Footwear,25
+Mar-16,Footwear,25
+Apr-16,Footwear,25
+May-16,Footwear,25
+Jun-16,Footwear,25
+Jul-16,Footwear,25
+Aug-16,Footwear,25
+Sep-16,Footwear,25
+Oct-16,Footwear,25
+Nov-16,Footwear,25
+Dec-16,Footwear,25
+Jan-17,Footwear,25
+Feb-17,Footwear,25
+Mar-17,Footwear,25
+Apr-17,Footwear,25
+May-17,Footwear,25
+Jun-17,Footwear,25
+Jul-17,Footwear,25
+Aug-17,Footwear,25
+Sep-17,Footwear,25
+Oct-17,Footwear,25
+Nov-17,Footwear,25
+Dec-17,Footwear,25
+Jan-18,Footwear,30
+Feb-18,Footwear,30
+Mar-18,Footwear,30
+Apr-18,Footwear,30
+May-18,Footwear,30
+Jun-18,Footwear,30
+Jul-18,Footwear,30
+Aug-18,Footwear,30
+Sep-18,Footwear,30
+Oct-18,Footwear,30
+Nov-18,Footwear,30
+Dec-18,Footwear,30
+Jan-19,Footwear,30
+Feb-19,Footwear,30
+Mar-19,Footwear,30
+Apr-19,Footwear,30
+May-19,Footwear,30
+Jun-19,Footwear,30
+Jul-19,Footwear,30
+Aug-19,Footwear,30
+Sep-19,Footwear,30
+Oct-19,Footwear,30
+Nov-19,Footwear,30
+Dec-19,Footwear,30
+Jan-20,Footwear,30
+Feb-20,Footwear,45
+Mar-20,Footwear,45
+Apr-20,Footwear,45
+May-20,Footwear,45
+Jun-20,Footwear,45
+Jul-20,Footwear,45
+Aug-20,Footwear,45
+Sep-20,Footwear,45
+Oct-20,Footwear,45
+Nov-20,Footwear,45
+Dec-20,Footwear,45
+Jan-21,Footwear,45
+Feb-21,Footwear,45
+Mar-21,Footwear,45
+Apr-21,Footwear,45
+May-21,Footwear,45
+Jun-21,Footwear,45
+Jul-21,Footwear,45
+Aug-21,Footwear,45
+Sep-21,Footwear,45
+Oct-21,Footwear,45
+Nov-21,Footwear,45
+Dec-21,Footwear,45
+Jan-22,Footwear,45
+Feb-22,Footwear,45
+Mar-22,Footwear,45
+Apr-22,Footwear,45
+May-22,Footwear,45
+Jun-22,Footwear,45
+Jul-22,Footwear,45
+Aug-22,Footwear,45
+Sep-22,Footwear,45
+Oct-22,Footwear,45
+Nov-22,Footwear,45
+Dec-22,Footwear,45
+Jan-23,Footwear,45
+Feb-23,Footwear,45
+Mar-23,Footwear,45
+Apr-23,Footwear,45
+May-23,Footwear,45
+Jun-23,Footwear,45
+Jul-23,Footwear,45
+Aug-23,Footwear,45
