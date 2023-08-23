@@ -4,32 +4,27 @@ from bson.json_util import dumps
 from flask_cors import CORS
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb://localhost:27017/StockData"
+app.config["MONGO_URI"] = "mongodb://localhost:27017/SystemDB"
 mongo = PyMongo(app)
 
-@app.route('/stockinfo', methods=['GET'])
-def get_stockinfo():
-    data = mongo.db.StockInfo.find()
+@app.route('/production', methods=['GET'])
+def get_production():
+    data = mongo.db.Production.find()
     return dumps(data)  # Converts BSON to JSON
 
-@app.route('/openclose', methods=['GET'])
-def get_openclose():
-    data = mongo.db.OpenClose.find()
+@app.route('/payment', methods=['GET'])
+def get_pyment():
+    data = mongo.db.Payment.find()
     return dumps(data)  # Converts BSON to JSON
 
-@app.route('/highlow', methods=['GET'])
-def get_highlow():
-    data = mongo.db.HighLow.find()
+@app.route('/marketdemand', methods=['GET'])
+def get_marketdemand():
+    data = mongo.db.MarketDemand.find()
     return dumps(data)  # Converts BSON to JSON
 
-@app.route('/volume', methods=['GET'])
-def get_volume():
-    data = mongo.db.Volume.find()
-    return dumps(data)  # Converts BSON to JSON
-
-@app.route('/tradinginfo', methods=['GET'])
-def get_tradinginfo():
-    data = mongo.db.TradingInfo.find()
+@app.route('/employee', methods=['GET'])
+def get_employee():
+    data = mongo.db.Employee.find()
     return dumps(data)  # Converts BSON to JSON
 
 @app.route("/")
