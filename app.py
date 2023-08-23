@@ -12,6 +12,11 @@ def get_production():
     data = mongo.db.Production.find()
     return dumps(data)  # Converts BSON to JSON
 
+@app.route('/current', methods=['GET'])
+def get_current():
+    data = mongo.db.Current.find()
+    return dumps(data)  # Converts BSON to JSON
+
 @app.route('/payment', methods=['GET'])
 def get_pyment():
     data = mongo.db.Payment.find()
