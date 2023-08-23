@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  </head>
+  <body>
+    <h1 id="pageTitle">STOCKANALYZER</h1>
+    <div id="dropdowns">
+      <h2>Select Ticker</h2>
+      <select id="tickerDropdown"></select>
+    </div>
+    <div id="stockInfo"></div>
+    <div id="tableContainer"></div>
+    <div id="candlestickChart"></div>
+    <div id="barChartContainer"></div>
+    <div id="lineChartContainer"></div>
+
+    <script src="{{ url_for('static', filename='js/d3.js') }}"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="{{ url_for('static', filename='js/dashboard.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/bargraph.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/candlestick.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="{{ url_for('static', filename='js/linegraph.js')}}"></script>
+  </body>
+</html>
+
+
+
+
+
