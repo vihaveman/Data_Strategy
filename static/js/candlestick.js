@@ -1,78 +1,102 @@
 function fetchData() {
-  const url = '/tradinginfo';
+  const url = '/production';
 
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      const tickers = [...new Set(data.map(item => item.Ticker))];
-      const tickerDropdown = document.getElementById("tickerDropdown");
+  return fetch(url)
+      .then(response => response.json())
+      .then(data => {
+          const products = [...new Set(data.map(item => item.Product))];
+          const productDropdown = document.getElementById("productDropdown");
 
-      tickers.forEach(ticker => {
-        const option = document.createElement("option");
-        option.text = ticker;
-        tickerDropdown.appendChild(option);
-      });
+          products.forEach(product => {
+              const option = document.createElement("option");
+              option.text = product;
+              productDropdown.appendChild(option);
+          });
 
-      // When a dropdown value is changed, update the visualizations.
-      tickerDropdown.addEventListener("change", updateVisualizations.bind(null, data, tickerDropdown));
-      // Call updateVisualizations with the fetched data
-      updateVisualizations(data, tickerDropdown);
-    })
-    .catch(error => console.log(error));
+          // When a dropdown value is changed, update the visualizations.
+          productDropdown.addEventListener("change", updateVisualizations);
+          updateVisualizations();
+
+          function updateVisualizations() {
+              const selectedProduct = productDropdown.value;
+              const filteredData = data
+                  .filter(item => item.Product === selectedProduct)
+                  .filter(item => item.Date.endsWith('-22')); // Filter to only include data from 2023
+
+              const processedData = convertData(filteredData);
+              drawLineGraph(processedData);
+          }
+      })
+      .catch(error => console.log(error));
 }
 
-function updateVisualizations(data, tickerDropdown) {
-  const selectedTicker = tickerDropdown.value;
-  const filteredData = data.filter(item => item.Ticker === selectedTicker);
-  drawCandlestickChart(filteredData);
+function convertData(data) {
+  const parseTime = d3.timeParse("%b-%y"); // Parses dates in the format "Jan-23"
+
+  return data.map(item => ({
+      ...item,
+      Date: parseTime(item.Date), // Convert the string date to a Date object
+      ProductionVolume: parseFloat(item.ProductionVolume),
+      CostPerUnit: parseFloat(item.CostPerUnit)
+  }));
 }
 
-function drawCandlestickChart(data) {
-  const dates = [];
-  const lows = [];
-  const opens = [];
-  const closes = [];
-  const highs = [];
+function drawLineGraph(data) {
+  const margin = { top: 30, right: 20, bottom: 30, left: 50 };
+  const width = 600 - margin.left - margin.right;
+  const height = 400 - margin.top - margin.bottom;
 
-  data.forEach(item => {
-    const dateValue = new Date(Date.parse(item.Date));
-    const lowValue = parseFloat(item.Low);
-    const openValue = parseFloat(item.Open);
-    const closeValue = parseFloat(item.Close);
-    const highValue = parseFloat(item.High);
+  const svg = d3
+      .select('#line1ChartContainer')
+      .html('') // Clear any existing SVG elements
+      .append('svg')
+      .attr('width', width + margin.left + margin.right)
+      .attr('height', height + margin.top + margin.bottom)
+      .append('g')
+      .attr('transform', `translate(${margin.left},${margin.top})`);
 
-    dates.push(dateValue);
-    lows.push(lowValue);
-    opens.push(openValue);
-    closes.push(closeValue);
-    highs.push(highValue);
-  });
+  const xScale = d3.scaleTime()
+      .domain(d3.extent(data, d => d.Date)) // Use the Date field here
+      .range([0, width]);
 
-  const trace = {
-    x: dates,
-    close: closes,
-    high: highs,
-    low: lows,
-    open: opens,
-    type: 'candlestick',
-    increasing: { line: { color: 'green' } },
-    decreasing: { line: { color: 'red' } },
-  };
+  const yScale = d3.scaleLinear()
+      .range([height, 0]);
 
-  const layout = {
-    title: 'Monthly Trading',
-    xaxis: {
-      title: 'Date'
-    },
-    yaxis: {
-      title: 'Price'
-    }
-  };
+  const line = d3.line()
+      .x(d => xScale(d.Date)) // Adjust this to use the Date field
+      .y(d => yScale(d.CostPerUnit));
 
-  const dataPlotly = [trace];
+  yScale.domain([0, d3.max(data, d => d.CostPerUnit)]);
 
-  Plotly.newPlot('candlestickChart', dataPlotly, layout);
+  svg.append('path')
+      .datum(data)
+      .attr('class', 'line')
+      .attr('d', line)
+      .style('stroke', 'red');
+
+  svg.append('g')
+      .attr('class', 'x-axis')
+      .attr('transform', `translate(0,${height})`)
+      .call(d3.axisBottom(xScale));
+
+  svg.append('g')
+      .attr('class', 'y-axis')
+      .call(d3.axisLeft(yScale));
+
+  svg.append('text')
+      .attr('x', width / 2)
+      .attr('y', -10)
+      .attr('text-anchor', 'middle')
+      .text('Monthly Cost Per Unit');
 }
+
+// Load D3.js and fetch data
+document.addEventListener('DOMContentLoaded', () => {
+  Promise.all([
+      import('https://d3js.org/d3.v7.min.js'), // Load D3.js from the CDN
+      fetchData() // Fetch data and draw the line graph
+  ]).catch(error => console.log(error));
+});
 
 fetchData();
 
