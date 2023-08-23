@@ -1,25 +1,25 @@
 function fetchData() {
-  const url = '/openclose';
+  const url = '/production';
 
   return fetch(url)
     .then(response => response.json())
     .then(data => {
-      const tickers = [...new Set(data.map(item => item.Ticker))];
-      const tickerDropdown = document.getElementById("tickerDropdown");
+      const products = [...new Set(data.map(item => item.Product))];
+      const productDropdown = document.getElementById("productDropdown");
 
-      tickers.forEach(ticker => {
+      products.forEach(product => {
         const option = document.createElement("option");
-        option.text = ticker;
-        tickerDropdown.appendChild(option);
+        option.text = product;
+        productDropdown.appendChild(option);
       });
 
       // When a dropdown value is changed, update the visualizations.
-      tickerDropdown.addEventListener("change", updateVisualizations);
+      productDropdown.addEventListener("change", updateVisualizations);
       updateVisualizations();
 
       function updateVisualizations() {
-        const selectedTicker = tickerDropdown.value;
-        const filteredData = data.filter(item => item.Ticker === selectedTicker);
+        const selectedTicker = productDropdown.value;
+        const filteredData = data.filter(item => item.Product === selectedProduct);
         const processedData = convertData(filteredData);
         drawLineGraph(processedData);
       }
@@ -30,8 +30,8 @@ function fetchData() {
 function convertData(data) {
   return data.map(item => ({
     ...item,
-    Date: new Date(item.Date),
-    Close: parseFloat(item.Close)
+    Production Volume: parseFloat(item.Production Volume),
+    Cost Per Unit: parseFloat(item.Cost Per Unit)
   }));
 }
 
@@ -56,11 +56,11 @@ function drawLineGraph(data) {
     .range([height, 0]);
 
   const line = d3.line()
-    .x(d => xScale(d.Date))
-    .y(d => yScale(d.Close));
+    .x(d => xScale(d.Production Volume))
+    .y(d => yScale(d.Cost Per Unit));
 
-  xScale.domain(d3.extent(data, d => d.Date));
-  yScale.domain([0, d3.max(data, d => d.Close)]);
+  xScale.domain(d3.extent(data, d => d.Production Volume));
+  yScale.domain([0, d3.max(data, d => d.Cost Per Unit)]);
 
   svg.append('path')
     .datum(data)
@@ -81,7 +81,7 @@ function drawLineGraph(data) {
     .attr('x', width / 2)
     .attr('y', -10)
     .attr('text-anchor', 'middle')
-    .text('Closing Prices');
+    .text('Production Volume vs Cost Per Unit');
 }
 
 // Load D3.js and fetch data
