@@ -19,6 +19,11 @@
   <div id="clusterContainer"></div>
   <div id="line1ChartContainer"></div>
 
+  <div id="customTableContainer">
+    <h2>Payment Cycle</h2> <!-- Title for the Payment Cycle table -->
+    <table id="paymentTable" class="table table-bordered"></table> <!-- Table will be generated here -->
+  </div>
+
   <div class="container mt-4">
     <!-- Create a dropdown menu -->
     <select id="scoreDropdown" class="form-control mb-3">
@@ -38,12 +43,19 @@
 
   <!-- Include your JavaScript files -->
   <script src="{{ url_for('static', filename='js/cost.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/payment.js')}}"></script>
   <script src="{{ url_for('static', filename='js/employee.js')}}"></script>
   <script src="{{ url_for('static', filename='js/bargraph.js')}}"></script>
   <script src="{{ url_for('static', filename='js/linegraph.js')}}"></script>
 
+  <!-- Include your JavaScript code for generating the table -->
+  <script>
+    // Your JavaScript code for generating the "Payment Cycle" table goes here
+    // Make sure to call the function that generates the table
+  </script>
 </body>
 </html>
+
 
 
 
