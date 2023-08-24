@@ -5,7 +5,6 @@
   <!-- Include Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
-   
   </style>
 </head>
 <body style="background-color: grey; color: white; font-family: Arial, sans-serif;">
@@ -18,18 +17,20 @@
   </div>
 
   <div id="lineContainer">
-  <div id="customTableContainer">
-    <h2>Payment Cycle</h2> <!-- Title for the Payment Cycle table -->
-    <table id="paymentTable" class="table table-bordered"></table> <!-- Table will be generated here -->
-  </div>
+    <div id="lineContainer" style="height: 400px; width: 100%;"></div> <!-- Container for the line chart -->
+    <div id="customTableContainer">
+      <h2>Payment Cycle</h2> <!-- Title for the Payment Cycle table -->
+      <table id="paymentTable" class="table table-bordered"></table> <!-- Table will be generated here -->
+    </div>
 
-  <style>
-    /* Add custom styling for the table container */
-    #customTableContainer {
-      background-color: teal; /* Set the background color */
-      padding: 20px; /* Add some padding for spacing */
-    }
-  </style>
+    <style>
+      /* Add custom styling for the table container */
+      #customTableContainer {
+        background-color: teal; /* Set the background color */
+        padding: 20px; /* Add some padding for spacing */
+      }
+    </style>
+  </div>
 
   <div class="container mt-4">
     <!-- Create a dropdown menu -->
@@ -49,13 +50,13 @@
   <script src="https://code.highcharts.com/highcharts.js"></script>
 
   <!-- Include your JavaScript files -->
-
   <script src="{{ url_for('static', filename='js/payment.js')}}"></script>
   <script src="{{ url_for('static', filename='js/employee.js')}}"></script>
   <script src="{{ url_for('static', filename='js/linegraph.js')}}"></script>
 
 </body>
 </html>
+
 
 
 
