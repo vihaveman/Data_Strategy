@@ -51,6 +51,10 @@ $(document).ready(function() {
       const tableContainer = $('#tableContainer');
       tableContainer.empty();
 
+        // Add a title element before the table
+        const tableTitle = $('<h3>Employee Satisfaction Cluster </h3>');
+        tableTitle.appendTo(tableContainer);
+
       const table = $('<table class="table table-bordered table-hover"></table>');
       const thead = $('<thead></thead>').appendTo(table);
       const tbody = $('<tbody></tbody>').appendTo(table);
