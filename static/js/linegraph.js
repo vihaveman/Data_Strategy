@@ -6,7 +6,7 @@ function fetchData() {
     .then(data => {
       const products = [...new Set(data.map(item => item.Product))];
       const productDropdown = document.getElementById("productDropdown");
-
+      productDropdown.innerHTML = ""
       products.forEach(product => {
         const option = document.createElement("option");
         option.text = product;
@@ -82,15 +82,4 @@ function drawLineGraph(data) {
     .attr('y', -10)
     .attr('text-anchor', 'middle')
     .text('Production Volume vs Cost Per Unit');
-}
-
-// Load D3.js and fetch data
-document.addEventListener('DOMContentLoaded', () => {
-  Promise.all([
-    import('https://d3js.org/d3.v7.min.js'), // Load D3.js from the CDN
-    fetchData() // Fetch data and draw the line graph
-  ]).catch(error => console.log(error));
-});
-
-
-fetchData();
+};
