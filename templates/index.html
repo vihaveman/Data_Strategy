@@ -5,11 +5,7 @@
   <!-- Include Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
-    /* Add a specific width to the lineChartContainer */
-    #lineChartContainer {
-      width: 80%; /* Adjust this value as needed */
-      margin: 0 auto; /* Center the container horizontally */
-    }
+   
   </style>
 </head>
 <body style="background-color: grey; color: white; font-family: Arial, sans-serif;">
@@ -21,13 +17,11 @@
     <select id="productDropdown"></select>
   </div>
 
-  <div id="lineChartContainer"></div>
-
+  <div id="lineContainer">
   <div id="customTableContainer">
     <h2>Payment Cycle</h2> <!-- Title for the Payment Cycle table -->
     <table id="paymentTable" class="table table-bordered"></table> <!-- Table will be generated here -->
   </div>
-
   <div class="container mt-4">
     <!-- Create a dropdown menu -->
     <select id="scoreDropdown" class="form-control mb-3">
@@ -51,11 +45,6 @@
   <script src="{{ url_for('static', filename='js/employee.js')}}"></script>
   <script src="{{ url_for('static', filename='js/linegraph.js')}}"></script>
 
-  <!-- Include your JavaScript code for generating the table -->
-  <script>
-    // Your JavaScript code for generating the "Payment Cycle" table goes here
-    // Make sure to call the function that generates the table
-  </script>
 </body>
 </html>
 
