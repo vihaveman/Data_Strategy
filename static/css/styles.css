@@ -1,7 +1,17 @@
-body {
-  background-color: grey;
-  color: white;
+#body {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+
+    /* Add custom styling for the table container */
+#customTableContainer {
+  background-color: red; /* Set the background color */
+  padding: 20px; /* Add some padding for spacing */
+  }
+ 
+
 
 #pageTitle {
   text-align: center;
@@ -37,3 +47,5 @@ body {
 .table-pink {
   background-color: rgb(255, 192, 232);
 }
+
+ 
