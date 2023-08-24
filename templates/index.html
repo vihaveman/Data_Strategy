@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+
+  </head>
+  <body>
+    <h1 id="pageTitle">SYSTEM THINKING</h1>
+        <style>
+        body {
+            background-image: url("{{ url_for('static', filename='images.jpg') }}");
+            background-size: cover;
+        }
+    </style>
+
+    <div id="dropdowns">
+      <h2>Select Product</h2>
+      <select id="productDropdown"></select>
+
+      <div class="chart-container">
+        <div id="lineChartContainer"></div>
+      
+        <div id="demandSection">
+          <h2>Current Demand</h2>
+          <div id="demandTable"></div>
+        </div>
+        
+        <div id="marketSection">
+          <h2>Market Distribution</h2>
+          <canvas id="marketChart"></canvas>
+        </div>        
+  
+        <div id="customTableContainer">
+          <h2>Payment Cycle</h2> <!-- Title for the Payment Cycle table -->
+          <table id="paymentTable" class="table table-bordered"></table> <!-- Table will be generated here -->
+        </div>
+      </div>
+    
+
+    </div>
+
+    <div class="container mt-4">
+      <!-- Create a dropdown menu -->
+      <select id="scoreDropdown" class="form-control mb-3">
+        <option value="below3">Below 3</option>
+        <option value="between3and4">Between 3 and 4</option>
+        <option value="above4">Above 4</option>
+      </select>
+      <!-- Display the table here -->
+      <div id="tableContainer"></div>
+    </div>
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Add this line for Chart.js -->
+    
+    <script src="{{ url_for('static', filename='js/linegraph.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/demand.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/market.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/payment.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/employee.js')}}"></script>
+</body> 
+</html>
+
+
