@@ -1,0 +1,88 @@
+#body {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column; /* Aligns the child elements vertically */
+  align-items: center; /* Centers the child elements horizontally */
+  justify-content: space-around; /* Optional: creates space between the elements */
+  width: 100%; /* Takes up the full width of the parent container */
+}
+
+/* Add this CSS to style the individual chart containers */
+.chart-item {
+  width: 80%; /* Adjust as needed */
+  margin: 20px auto; /* Centers the item horizontally and adds vertical spacing */
+}
+
+#pageTitle {
+  text-align: center;
+  border: 2px solid black;
+  padding: 10px;
+  background: linear-gradient(to right, green, red);
+  color: white;
+}
+
+.dropdown-header {
+  background-color: green;
+  color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.green-bar {
+  fill: rgb(166, 194, 166);
+}
+
+.red-bar {
+  fill: rgb(193, 144, 144);
+}
+
+
+.table-info {
+  background-color: blue;
+  color: white;
+}
+
+.table-pink {
+  background-color: rgb(255, 192, 232);
+}
+
+ /* Add this CSS to style the table */
+.demand-table {
+  border-collapse: collapse;
+  width: 300px;
+  margin-left: 20px;
+}
+
+.demand-table th, .demand-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.demand-table th {
+  background-color: #f2f2f2;
+}
+
+
+#customTableContainer {
+  background-color: teal; /* Set the background color */
+  padding: 20px; /* Add some padding for spacing */
+}
+
+
+#demandTable {
+  background-color: rgb(119, 128, 0); /* Set the background color */
+  padding: 30px; /* Add some padding for spacing */
+}
+
+#demandSection > * {
+  display: block;
+  width: 100%;
+}
