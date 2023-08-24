@@ -29,3 +29,11 @@ body {
 }
 
 
+.table-info {
+  background-color: blue;
+  color: white;
+}
+
+.table-pink {
+  background-color: rgb(255, 192, 232);
+}
