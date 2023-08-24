@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<head>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-color: grey; color: white; font-family: Arial, sans-serif;">
 
+  <h1 id="pageTitle" style="text-align: center; border: 2px solid black; padding: 10px; background: linear-gradient(to right, green, red); color: white;">SYSTEM THINKING</h1>
+  
+  <div id="dropdowns">
+    <h2 style="background-color: green; color: white;">Select Product</h2>
+    <select id="productDropdown"></select>
+  </div>
 
-  </head>
-  <body>
-    <h1 id="pageTitle">SYSTEM THINKING</h1>
-    <div id="dropdowns">
-      <h2>Select Product</h2>
-      <select id="productDropdown"></select>
+  <div id="lineChartContainer"></div>
+  <div id="barChartContainer"></div>
+  <div id="clusterContainer"></div>
+  <div id="line1ChartContainer"></div>
 
+  <div class="container mt-4">
+    <!-- Create a dropdown menu -->
+    <select id="scoreDropdown" class="form-control mb-3">
+      <option value="below3">Below 3</option>
+      <option value="between3and4">Between 3 and 4</option>
+      <option value="above4">Above 4</option>
+    </select>
+    <!-- Display the table here -->
+    <div id="tableContainer"></div>
+  </div>
 
-    </div>
-    <div id="lineChartContainer"></div>
-    <div id="clusterContainer'"></div>
-    <div id="barChartContainer"></div>
-    <div id="line1ChartContainer"></div>
-    
+  <!-- Include necessary JavaScript libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.js"></script>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.js"></script>
-    <script src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
+  <!-- Include your JavaScript files -->
+  <script src="{{ url_for('static', filename='js/cost.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/employee.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/bargraph.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/linegraph.js')}}"></script>
 
-
-    <script src="{{ url_for('static', filename='js/cost.js')}}"></script>
-    <script src="{{ url_for('static', filename='js/employee.js')}}"></script>
-    <script src="{{ url_for('static', filename='js/bargraph.js')}}"></script>
-    <script src="{{ url_for('static', filename='js/linegraph.js')}}"></script>
-  </body>
+  <!-- Include your script that populates the table -->
+  <script src="your-script.js"></script>
+</body>
 </html>
+
 
 
 
