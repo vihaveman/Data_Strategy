@@ -6,6 +6,7 @@ function fetchData() {
         .then(data => {
             const products = [...new Set(data.map(item => item.Product))];
             const productDropdown = document.getElementById("productDropdown");
+            productDropdown.innerHTML = ""
 
             products.forEach(product => {
                 const option = document.createElement("option");
