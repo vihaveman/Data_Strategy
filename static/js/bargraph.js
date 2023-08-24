@@ -6,7 +6,7 @@ function fetchData() {
     .then(data => {
       const products = [...new Set(data.map(item => item.Product))];
       const productDropdown = document.getElementById("selectProduct");
-
+      productDropdown.innerHTML = ""
       products.forEach(product => {
         const option = document.createElement("option");
         option.text = product;
@@ -90,13 +90,9 @@ function drawBarChart(data) {
     .text('Total Demand by Month');
 }
 
-// Load D3.js and fetch data
-document.addEventListener('DOMContentLoaded', () => {
-  Promise.all([
-    import('https://d3js.org/d3.v7.min.js'), // Load D3.js from the CDN
-    fetchData() // Fetch data and draw the bar chart
-  ]).catch(error => console.log(error));
-});
+
+
+
 
 
 
