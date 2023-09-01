@@ -6,10 +6,17 @@
 
 .chart-container {
   display: flex;
-  flex-direction: column; /* Aligns the child elements vertically */
-  align-items: center; /* Centers the child elements horizontally */
-  justify-content: space-around; /* Optional: creates space between the elements */
-  width: 100%; /* Takes up the full width of the parent container */
+  flex-direction: row;  /* Aligns the child elements horizontally */
+  flex-wrap: wrap;  /* Allows items to wrap onto the next line */
+  align-items: center;  /* Centers the child elements vertically */
+  justify-content: space-around;  /* Optional: creates space between the elements */
+  width: 100%;  /* Takes up the full width of the parent container */
+}
+
+.chart-item {
+  max-width: 48%;  /* Adjust as needed so two items fit side by side */
+  width: 100%;  /* Takes the full width unless max-width is reached */
+  margin: 20px auto;  /* Centers the item horizontally and adds vertical spacing */
 }
 
 /* Add this CSS to style the individual chart containers */
@@ -73,7 +80,7 @@ body {
 
 #customTableContainer {
   background-color: teal; /* Set the background color */
-  padding: 20px; /* Add some padding for spacing */
+  padding: 50px; /* Add some padding for spacing */
 }
 
 
