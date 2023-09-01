@@ -17,7 +17,7 @@ async function fetchData() {
         uniqueProducts[product] = item.WorkingDays;
       }
     });
-  
+    
     // Create table header
     const thead = document.createElement('thead');
     const headerRow = document.createElement('tr');
