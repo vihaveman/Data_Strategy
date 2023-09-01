@@ -18,11 +18,6 @@ async function fetchData() {
       }
     });
   
-    // Create the table HTML
-    const customTableContainer = document.getElementById('customTableContainer'); // Use the new container name here
-    const paymentTable = document.createElement('table');
-    paymentTable.className = 'table table-bordered';
-  
     // Create table header
     const thead = document.createElement('thead');
     const headerRow = document.createElement('tr');
